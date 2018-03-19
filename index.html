@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/rotate.js"></script>
+    <script src="scripts/resizing.js">
+
+    </script>
+    <title>Some title</title>
+  </head>
+  <body>
+    <main>
+      <div class="img_container">
+        <img src="images/letiste-logo.jpg" alt="Letiste" onclick="rotateDIV()" class="logo" id="rotate2D">
+      </div>
+      <ul class="social_icons">
+        <li>
+          <a href="https://www.facebook.com/letistefest/" title="Facebook" target="_blank">
+            <img src="images/facebook-logo.png" class="social_icons__icon" alt="Facebook" width="32" height="32">
+            <img src="images/facebook-logo-color.png" class="social_icons__icon social_icons__icon--hover" alt="Facebook" width="32" height="32">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com/letistefest/" title="Twitter" target="_blank">
+            <img src="images/twitter-logo.png" class="social_icons__icon" alt="Twitter" width="32" height="32">
+            <img src="images/twitter-logo-color.png" class="social_icons__icon social_icons__icon--hover" alt="Twitter" width="32" height="32">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/letistefest/" title="Instagram" target="_blank">
+            <img src="images/instagram-logo.png" class="social_icons__icon" alt="Instagram" width="32" height="32">
+            <img src="images/instagram-logo-color.png" class="social_icons__icon social_icons__icon--hover" alt="Instagram" width="32" height="32">
+          </a>
+        </li>
+      </ul>
+    </main>
+    <footer>
+      <div class="inner">
+        <p>© Letiště 2018</p>
+      </div>
+    </footer>
+
+    <script>
+      $(document).ready(function() {
+          $(".logo").fadeOut(10);
+          $(".logo").fadeIn(3000);
+      });
+    </script>
+  </body>
+</html>
