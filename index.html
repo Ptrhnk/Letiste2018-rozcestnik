@@ -1,54 +1,65 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="scripts/rotate.js"></script>
-    <script src="scripts/resizing.js">
 
-    </script>
-    <title>Let18</title>
-  </head>
-  <body>
-    <main>
-      <div class="img_container">
-        <img src="images/letiste-logo.jpg" alt="Letiste" onclick="rotateDIV()" class="logo" id="rotate2D">
-      </div>
-      <ul class="social_icons">
-        <li>
-          <a href="https://www.facebook.com/letistefest/" title="Facebook" target="_blank">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="scripts/rotate.js"></script>
+  <script src="scripts/resizing.js">
+  </script>
+  <title>Let18</title>
+</head>
+
+<body>
+  <main>
+    <!-- Goout -->
+    <!-- link to goout page: https://goout.net/cs/festivaly/letiste-festival-2018/ycrtc/#%22T%22:%222018-07-13T12:00:01%22 -->
+    <a href="https://goout.net/cs/listky/letiste-festival-2018/qidc/" class="goout_anchor" title="tickets" target="_blank">
+        <img src="images/goout-icon-b.png" alt="tickets" class="goout" onmouseover="toggleRotate()" id="rotateToggle">
+    </a>
+
+    <!-- Main logo -->
+    <a class="center_absolute" href="https://goout.net/cs/festivaly/letiste-festival-2018/ycrtc/#%22T%22:%222018-07-13T12:00:01%22" target="_blank">
+      <img src="images/logo-b.png" alt="Letiste" class="logo" id="rotateClock">
+    </a>
+
+    <!-- Social icons -->
+    <ul class="social_icons">
+      <li>
+        <a href="https://www.facebook.com/letistefest/" title="Facebook" target="_blank">
             <img src="images/facebook-logo.png" class="social_icons__icon" alt="Facebook" width="32" height="32">
             <img src="images/facebook-logo-color.png" class="social_icons__icon social_icons__icon--hover" alt="Facebook" width="32" height="32">
           </a>
-        </li>
-        <li>
-          <a href="https://www.twitter.com/letistefest/" title="Twitter" target="_blank">
+      </li>
+      <li>
+        <a href="https://www.twitter.com/letistefest/" title="Twitter" target="_blank">
             <img src="images/twitter-logo.png" class="social_icons__icon" alt="Twitter" width="32" height="32">
             <img src="images/twitter-logo-color.png" class="social_icons__icon social_icons__icon--hover" alt="Twitter" width="32" height="32">
           </a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/letistefest/" title="Instagram" target="_blank">
+      </li>
+      <li>
+        <a href="https://www.instagram.com/letistefest/" title="Instagram" target="_blank">
             <img src="images/instagram-logo.png" class="social_icons__icon" alt="Instagram" width="32" height="32">
             <img src="images/instagram-logo-color.png" class="social_icons__icon social_icons__icon--hover" alt="Instagram" width="32" height="32">
           </a>
-        </li>
-      </ul>
-    </main>
-    <footer>
-      <div class="inner">
-        <p>© Letiště 2018</p>
-      </div>
-    </footer>
+      </li>
+    </ul>
+  </main>
+  <footer>
+    <div class="inner">
+      <p>© Letiště 2018</p>
+    </div>
+  </footer>
 
-    <script>
-      $(document).ready(function() {
-          $(".logo").fadeOut(10);
-          $(".logo").fadeIn(3000);
-      });
-    </script>
-  </body>
+  <script>
+    $(document).ready(function() {
+      $(".logo").fadeOut(10);
+      $(".logo").fadeIn(2000);
+    });
+  </script>
+</body>
+
 </html>

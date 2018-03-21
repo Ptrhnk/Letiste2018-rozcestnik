@@ -1,5 +1,5 @@
 html, body {
-  /* background-color: lightblue; */
+  /* background-color: black; */
   height: 100%;
 }
 
@@ -14,8 +14,7 @@ main:after {
   height: 100px;
 }
 
-.img_container {
-  /* padding: 30px; */
+.center_absolute {
   /* background-color: lightgreen; */
   margin: 0;
   padding: 10px;
@@ -25,15 +24,44 @@ main:after {
   transform: translate(-50%, -50%);
 }
 
-div {
-  /* background-color: pink; */
+.logo {
+  height: 300px;
+  width: auto;
+  display: none;
+  -webkit-filter: drop-shadow(0px 0px 2px #35cbce);
+  filter: drop-shadow(0px 0px 2px #35cbce);
+  /* border-radius: 150px; */
 }
 
-.logo {
-  width: 300px;
-  display: none;
-  border-radius: 150px;
-  /* transform: 0deg; */
+.center_absolute:hover img {
+  -webkit-filter: drop-shadow(0px 0px 5px #2899d6);
+  filter: drop-shadow(0px 0px 5px #2899d6);
+}
+
+.goout {
+  height: 100px;
+  width: auto;
+  border-radius: 90px;
+  padding: 40px;
+  -webkit-filter: drop-shadow(5px 5px 5px #224);
+  filter: drop-shadow(5px 5px 5px #224);
+  margin: 0;
+  /* position: relative; */
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.goout_anchor {
+  /* padding: 30px; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* background-color: lightgreen; */
+}
+
+.goout_anchor:hover img {
+  -webkit-filter: drop-shadow(5px 5px 5px #224);
+  filter: drop-shadow(5px 5px 5px #224);
 }
 
 footer {
@@ -65,8 +93,8 @@ li {
 
 .social_icons {
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: 40px;
+  top: 40px;
 }
 
 .social_icons>li {
