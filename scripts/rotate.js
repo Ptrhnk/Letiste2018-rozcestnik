@@ -15,22 +15,19 @@ function toggleRotate() {
 }
 
 function startRotate() {
-  if(right) {
-    n = n + 1
-  } else {
-    n = n - 1
-  }
+  n = n + 1
+
   x.style.transform = "rotate(" + n + "deg)"
   x.style.webkitTransform = "rotate(" + n + "deg)"
   x.style.OTransform = "rotate(" + n + "deg)"
   x.style.MozTransform = "rotate(" + n + "deg)"
 
-  if (n == 90) {
-    clearInterval(rotINT)
-    right = false;
-  } else if (n == 0) {
+  if (n == 90 || n == 180 || n == 270 || n == 360) {
     clearInterval(rotINT)
     right = true;
+    if (n >= 360) {
+      n = 0
+    }
   }
 }
 
