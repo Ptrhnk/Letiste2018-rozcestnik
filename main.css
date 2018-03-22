@@ -1,5 +1,5 @@
 html, body {
-  /* background-color: black; */
+  background-color: black;
   height: 100%;
 }
 
@@ -16,7 +16,8 @@ main:after {
 
 .center_absolute {
   /* background-color: lightgreen; */
-  margin: 0;
+  /* margin: 0; */
+  margin-top: 100px;
   padding: 10px;
   position: absolute;
   top: 50%;
@@ -25,27 +26,27 @@ main:after {
 }
 
 .logo {
-  height: 300px;
+  height: 250px;
   width: auto;
   display: none;
-  -webkit-filter: drop-shadow(0px 0px 2px #35cbce);
-  filter: drop-shadow(0px 0px 2px #35cbce);
+  -webkit-filter: drop-shadow(0px 0px 3px #2A8EFF);
+  filter: drop-shadow(0px 0px 3px #2A8EFF);
   /* border-radius: 150px; */
 }
 
 .center_absolute:hover img {
-  -webkit-filter: drop-shadow(0px 0px 5px #2899d6);
-  filter: drop-shadow(0px 0px 5px #2899d6);
+  -webkit-filter: drop-shadow(0px 0px 4px #2A8EFF);
+  filter: drop-shadow(0px 0px 4px #2A8EFF);
 }
 
 .goout {
   height: 100px;
   width: auto;
-  border-radius: 90px;
+  border-radius: 60px;
   padding: 40px;
-  -webkit-filter: drop-shadow(5px 5px 5px #224);
-  filter: drop-shadow(5px 5px 5px #224);
-  margin: 0;
+  -webkit-filter: drop-shadow(0px 0px 10px #7cc6ff);
+  filter: drop-shadow(0px 0px 10px #7cc6ff);
+  /* margin: 0; */
   /* position: relative; */
   top: 50%;
   left: 50%;
@@ -53,6 +54,7 @@ main:after {
 }
 
 .goout_anchor {
+  /* margin-left: 10%; */
   /* padding: 30px; */
   /* display: flex; */
   /* align-items: center; */
@@ -60,14 +62,15 @@ main:after {
 }
 
 .goout_anchor:hover img {
-  -webkit-filter: drop-shadow(5px 5px 5px #224);
-  filter: drop-shadow(5px 5px 5px #224);
+  -webkit-filter: drop-shadow(0px 0px 10px #7cc6ff);
+  filter: drop-shadow(0px 0px 10px #7cc6ff);
 }
 
 footer {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   /* background-color: pink; */
+
   position: absolute;
   bottom: 0px;
   left: 0;
@@ -102,28 +105,18 @@ li {
   position: relative
 }
 
-.social_icons a:hover .social_icons__icon {
-  visibility: hidden
-}
-
-.social_icons a:hover .social_icons__icon--hover {
-  z-index: 3;
-  visibility: visible
-}
-
-
 .social_icons__icon {
   position: relative;
   z-index: 2
 }
-
+/*
 .social_icons__icon--hover {
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
   visibility: hidden
-}
+} */
 
 @media (max-width: 767px) {
   .social_icons {

@@ -21,7 +21,7 @@ $(document).ready(function() {
         height: '+=' + gooutResizeAmount + 'px',
         marginLeft: '-=' + gooutResizeAmount / 2 + 'px',
         marginTop: '-=' + gooutResizeAmount / 2 + 'px',
-        borderRadius: 60 + "px",
+        borderRadius: 100 + "px",
       }, gooutResizeTime);
     });
     $(".goout").mouseout(function() {
@@ -29,7 +29,7 @@ $(document).ready(function() {
         height: '-=' + gooutResizeAmount + 'px',
         marginLeft: '+=' + gooutResizeAmount / 2 + 'px',
         marginTop: '+=' + gooutResizeAmount / 2 + 'px',
-        borderRadius: 90 + "px",
+        borderRadius: 60 + "px",
       }, gooutResizeTime);
     });
 });
