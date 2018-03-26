@@ -1,6 +1,8 @@
 html, body {
   background-color: black;
+  margin: 0;
   height: 100%;
+  overflow: hidden;
 }
 
 main {
@@ -16,22 +18,20 @@ main:after {
 
 .center_absolute {
   /* background-color: lightgreen; */
-  /* margin: 0; */
+  display: table;
+  margin: 0 auto;
   margin-top: 100px;
   padding: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .logo {
-  height: 250px;
+  height: 180px;
   width: auto;
   display: none;
+  display: table;
+  margin: 0 auto;
   -webkit-filter: drop-shadow(0px 0px 3px #2A8EFF);
   filter: drop-shadow(0px 0px 3px #2A8EFF);
-  /* border-radius: 150px; */
 }
 
 .center_absolute:hover img {
@@ -40,30 +40,50 @@ main:after {
 }
 
 .goout {
-  height: 100px;
+  height: 70px;
   width: auto;
-  border-radius: 60px;
-  padding: 40px;
+  padding: 10px;
+  margin-top: 40px;
+  margin-left: 40px;
+  border-radius: 30px;
   -webkit-filter: drop-shadow(0px 0px 10px #7cc6ff);
   filter: drop-shadow(0px 0px 10px #7cc6ff);
-  /* margin: 0; */
-  /* position: relative; */
-  top: 50%;
-  left: 50%;
-  /* transform: translate(-50%, -50%); */
 }
 
+/* .goout_container {
+  width: 50%;
+  height: 50%;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+} */
+
 .goout_anchor {
-  /* margin-left: 10%; */
-  /* padding: 30px; */
-  /* display: flex; */
-  /* align-items: center; */
-  /* background-color: lightgreen; */
+  display: flex;
+  justify-content: center;
+  /* align-content: center; */
+  height: 150px;
+  width: 150px;
+  /* background-color: lightpink; */
 }
 
 .goout_anchor:hover img {
   -webkit-filter: drop-shadow(0px 0px 10px #7cc6ff);
   filter: drop-shadow(0px 0px 10px #7cc6ff);
+}
+
+.pismena {
+  /* background-color: lightgreen; */
+  display: table;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 10px;
+}
+
+#l, #e, #t, #i, #hacek, #tt, #hacek_ {
+  visibility: hidden;
 }
 
 footer {
@@ -109,28 +129,32 @@ li {
   position: relative;
   z-index: 2
 }
-/*
-.social_icons__icon--hover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  visibility: hidden
-} */
+
+#insta {
+  border-radius: 4px;
+}
 
 @media (max-width: 767px) {
-  .social_icons {
-    right: 10px;
-    top: 15px
+  html, body {
+    overflow: scroll;
   }
-  .social_icons>li {
-    padding-bottom: 7px
+  .goout {
+    margin-top: 20px;
+    margin-left: 20px;
+    /* padding: 0px; */
   }
-  .social_icons>li.social_icons__sep {
-    padding-bottom: 14px
+  .logo {
+    margin-top: -80px;
   }
-  .social_icons img {
-    max-width: 25px;
-    height: auto !important
+  #l, #e, #t, #i, #tt{
+    max-height: 50px;
+    width: auto !important
+  }
+  #hacek, #hacek_ {
+    max-height: 55px;
+    width: auto !important
+  }
+  .pismena {
+    margin-top: 50px;
   }
 }
