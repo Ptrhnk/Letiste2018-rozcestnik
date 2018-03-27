@@ -37,12 +37,12 @@ main:after {
   display: none;
   display: table;
   margin: 0 auto;
-  -webkit-filter: drop-shadow(0px 0px 3px #2A8EFF);
+  -webkit-filter: drop-shadow(0px 0px 6px #2A8EFF);
   filter: drop-shadow(0px 0px 3px #2A8EFF);
 }
 
 .center_absolute:hover img {
-  -webkit-filter: drop-shadow(0px 0px 4px #2A8EFF);
+  -webkit-filter: drop-shadow(0px 0px 8px #2A8EFF);
   filter: drop-shadow(0px 0px 4px #2A8EFF);
 }
 
@@ -72,8 +72,8 @@ main:after {
  float: left;
 }
 .goout_anchor:hover img {
-  -webkit-filter: drop-shadow(0px 0px 10px #7cc6ff);
-  filter: drop-shadow(0px 0px 5px #7cc6ff);
+  -webkit-filter: drop-shadow(0px 0px 10px #87c6f7);
+  filter: drop-shadow(0px 0px 5px #87c6f7);
 }
 .left_container {
   /* position: absolute; */
@@ -91,7 +91,6 @@ main:after {
 #l, #e, #t, #i, #hacek, #tt, #hacek_ {
   visibility: hidden;
 }
-
 footer {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -105,7 +104,6 @@ footer {
   padding: 10px 0;
   overflow: hidden;
 }
-
 .inner {
   margin: 0 auto;
   width: 100%;
