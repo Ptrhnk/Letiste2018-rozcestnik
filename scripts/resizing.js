@@ -1,11 +1,13 @@
 const clickResizeAmount = 20;
 const clickAnimationTime = 100;
-const focusResizeAmount = 70;
+const focusResizeAmount = 30;
 const focusAnimationTime = 200;
-const gooutResizeAmount = 5;
+const gooutResizeAmount = 12;
 const gooutResizeTime = 150;
 //
 $(document).ready(function() {
+  $(".logo").fadeOut(10);
+  $(".logo").fadeIn(2000);
     $(".logo").mouseover(function() {
       $(".logo").animate({
         height: '+=' + focusResizeAmount + 'px',
@@ -31,7 +33,7 @@ $(document).ready(function() {
         height: '+=' + gooutResizeAmount + 'px',
         marginLeft: '-=' + gooutResizeAmount / 4 + 'px',
         marginTop: '-=' + gooutResizeAmount / 2 + 'px',
-        borderRadius: 70 + "px",
+        borderRadius: 50 + "px",
       }, gooutResizeTime);
     });
     $(".goout").mouseout(function() {
@@ -39,7 +41,7 @@ $(document).ready(function() {
         height: '-=' + gooutResizeAmount + 'px',
         marginLeft: '+=' + gooutResizeAmount / 4 + 'px',
         marginTop: '+=' + gooutResizeAmount / 2 + 'px',
-        borderRadius: 30 + "px",
+        borderRadius: 20 + "px",
       }, gooutResizeTime);
     });
 });

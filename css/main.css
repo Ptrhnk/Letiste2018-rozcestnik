@@ -1,8 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html, body {
   background-color: black;
   margin: 0;
-  height: 100%;
-  overflow: hidden;
+  height: 90vh;
+  /* overflow: hidden; */
 }
 
 main {
@@ -26,6 +32,7 @@ main:after {
 
 .logo {
   height: 180px;
+  min-height: 180px;
   width: auto;
   display: none;
   display: table;
@@ -40,40 +47,39 @@ main:after {
 }
 
 .goout {
-  height: 70px;
+  margin-top: 12px;
+  height: 64px;
   width: auto;
-  padding: 10px;
-  margin-top: 40px;
-  margin-left: 40px;
-  border-radius: 30px;
+  border-radius: 20px;
   -webkit-filter: drop-shadow(0px 0px 10px #7cc6ff);
-  filter: drop-shadow(0px 0px 10px #7cc6ff);
+  filter: drop-shadow(0px 0px 5px #7cc6ff);
 }
-
-/* .goout_container {
-  width: 50%;
-  height: 50%;
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-} */
-
 .goout_anchor {
-  display: flex;
+  margin-top: 30px;
+  margin-left: 30px;
+  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
   justify-content: center;
-  /* align-content: center; */
-  height: 150px;
-  width: 150px;
+  -webkit-justify-content: center;
+  height: 90px;
+  width: 94px;
+  /* overflow: auto; */
   /* background-color: lightpink; */
 }
-
+.calendar {
+ float: left;
+}
 .goout_anchor:hover img {
   -webkit-filter: drop-shadow(0px 0px 10px #7cc6ff);
-  filter: drop-shadow(0px 0px 10px #7cc6ff);
+  filter: drop-shadow(0px 0px 5px #7cc6ff);
 }
-
+.left_container {
+  /* position: absolute; */
+  /* float: left; */
+  width: 200px
+}
 .pismena {
   /* background-color: lightgreen; */
   display: table;
@@ -127,24 +133,33 @@ li {
 
 .social_icons__icon {
   position: relative;
-  z-index: 2
+  width: 32px;
+  height: 32px;
 }
 
 #insta {
   border-radius: 4px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   html, body {
     overflow: scroll;
   }
   .goout {
-    margin-top: 20px;
-    margin-left: 20px;
+    max-height: 50px;
+    min-height: 50px;
+    width: auto !important
     /* padding: 0px; */
+  }
+  .goout_anchor {
+    margin-top: 28px;
+    margin-left: 25px;
+    max-height: 75px;
   }
   .logo {
     margin-top: -80px;
+    max-height: 130px;
+    min-height: 100px;
   }
   #l, #e, #t, #i, #tt{
     max-height: 50px;
@@ -156,5 +171,12 @@ li {
   }
   .pismena {
     margin-top: 50px;
+  }
+  .left_container {
+
+  }
+  .calendar {
+    max-height: 40px;
+    float: none;
   }
 }
