@@ -5,38 +5,40 @@
 }
 
 html, body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
   background-color: black;
-  margin: 0;
+}
+
+.header {
   height: 90vh;
-  /* overflow: hidden; */
+  position: relative;
+  /* background-color: lightgreen; */
 }
 
-main {
-  min-height: 100%;
-  margin-bottom: -100px;
-}
-
-main:after {
-  content: "";
-  display: block;
-  height: 100px;
+.center-box {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .center_absolute {
-  /* background-color: lightgreen; */
-  display: table;
-  margin: 0 auto;
+  display: inline-block;
   margin-top: 100px;
   padding: 10px;
+  text-align: center;
 }
 
 .logo {
   height: 180px;
   min-height: 180px;
   width: auto;
-  display: none;
-  display: table;
-  margin: 0 auto;
+  display: inline-block;
   -webkit-filter: drop-shadow(0px 0px 6px #2A8EFF);
   filter: drop-shadow(0px 0px 3px #2A8EFF);
 }
@@ -46,55 +48,52 @@ main:after {
   filter: drop-shadow(0px 0px 4px #2A8EFF);
 }
 
+.pismena {
+  /* background-color: pink; */
+  display: block;
+  min-width: 700px;
+  margin-top: 65px;
+  padding: 10px;
+}
+
+#l, #e, #t, #i, #s, #hacek, #tt, #ee, #hacek_ {
+  visibility: hidden;
+  -webkit-filter: drop-shadow(0px 0px 4px rgba(157, 226, 255, 0.48));
+  filter: drop-shadow(0px 0px 2px rgba(157, 226, 255, 0.48));
+  height: 130px
+}
+
+#hacek, #hacek_ {
+  position: absolute;
+}
+#hacek {
+  transform: translate(5%, 0);
+  -webkit-transform: translate(5%, 0);
+}
 .goout {
-  margin-top: 12px;
+  display: block;
   height: 64px;
-  width: auto;
   border-radius: 20px;
   -webkit-filter: drop-shadow(0px 0px 10px #7cc6ff);
   filter: drop-shadow(0px 0px 5px #7cc6ff);
 }
 .goout_anchor {
   margin-top: 30px;
-  margin-left: 30px;
-  display: -webkit-box;   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  justify-content: center;
-  -webkit-justify-content: center;
-  height: 90px;
-  width: 94px;
-  /* overflow: auto; */
-  /* background-color: lightpink; */
+  display: block;
+
 }
 .calendar {
- float: left;
+  margin-top: 35px;
+  height: 46px;
 }
-.goout_anchor:hover img {
-  -webkit-filter: drop-shadow(0px 0px 10px #87c6f7);
-  filter: drop-shadow(0px 0px 5px #87c6f7);
-}
-.left_container {
-  /* position: absolute; */
-  /* float: left; */
-  width: 200px
-}
-.pismena {
-  /* background-color: lightgreen; */
-  display: table;
-  margin: 0 auto;
-  margin-top: 100px;
-  padding: 10px;
-}
-
-#l, #e, #t, #i, #hacek, #tt, #hacek_ {
-  visibility: hidden;
+.left-container {
+  position: absolute;
+  left: 40px;
+  text-align: center;
 }
 footer {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
-  /* background-color: pink; */
 
   position: absolute;
   bottom: 0px;
@@ -143,38 +142,39 @@ li {
   html, body {
     overflow: scroll;
   }
+  .social_icons {
+    top: 30px;
+    right: 30px;
+  }
   .goout {
-    max-height: 50px;
-    min-height: 50px;
-    width: auto !important
-    /* padding: 0px; */
+    max-height: 40px;
+    min-height: 40px;
+    border-radius: 10px;
   }
   .goout_anchor {
-    margin-top: 28px;
-    margin-left: 25px;
-    max-height: 75px;
+    margin-top: 15px;
+    /* background-color: blue; */
   }
   .logo {
-    margin-top: -80px;
+
     max-height: 130px;
     min-height: 100px;
   }
-  #l, #e, #t, #i, #tt{
-    max-height: 50px;
-    width: auto !important
-  }
-  #hacek, #hacek_ {
-    max-height: 55px;
-    width: auto !important
+  #l, #e, #t, #i, #s, #tt, #hacek, #ee, #hacek_ {
+    max-height: 70px;
+    width: auto !important;
   }
   .pismena {
     margin-top: 50px;
+    min-width: 450px;
   }
-  .left_container {
-
+  .left-container {
+    top: 15px;
+    left: 30px;
   }
   .calendar {
-    max-height: 40px;
-    float: none;
+    margin-top: 25px;
+    max-height: 35px;
+    min-height: 35px;
   }
 }
