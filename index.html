@@ -37,29 +37,42 @@
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <!-- <link href="css/bootstrap.min.css" rel="stylesheet"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
   <script src="scripts/resizing.js"></script>
   <script src="scripts/blink.js"></script>
   <title>Let18</title>
 </head>
 
 <body>
-  <main>
+  <header class="header">
     <!-- Goout -->
-    <!-- <div class="goout_container"> -->
-    <div class="left_container">
+    <div class="left-container">
       <a href="https://goout.net/cs/listky/letiste-festival-2018/qidc/" class="goout_anchor" title="Tickets" target="_blank">
         <img src="images/goout-logo-b.png" alt="Tickets" class="goout" id="rotateToggle">
       </a>
-      <a target="_blank" title="Google Calendar" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MjY2dThyanVidm05bzAzM3JlNG00OGYzczMgbGV0aXN0ZUBhaXJmb3JjZXByb2R1Y3Rpb24uY3o&amp;tmsrc=letiste%40airforceproduction.cz">
-        <img src="images/calendar-logo.png" class="calendar" alt="Google Calendar" style="margin: 18px 53px; height: 50px">
+      <a title="Google Calendar" target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&tmeid=NzljY2tyczhzaWlndDNkYzZhZzJzNm9iOWUgYWlyZm9yY2Vwcm9kdWN0aW9uLmN6X2E0ZDNoZWY1ajFxNGowamZzOXN1ZHFydG1nQGc&tmsrc=airforceproduction.cz_a4d3hef5j1q4j0jfs9sudqrtmg%40group.calendar.google.com">
+        <img src="images/calendar-logo.png" class="calendar" alt="Google Calendar">
       </a>
     </div>
-    <!-- </div> -->
 
-    <!-- Main logo -->
-    <a class="center_absolute" href="https://www.facebook.com/events/151725018810281" target="_blank">
-      <img src="images/logo-w.png" alt="Letiste" class="logo" id="rotateClock">
-    </a>
+    <div class="center-box">
+      <!-- Main logo -->
+      <a class="logo-box" href="https://www.facebook.com/events/151725018810281" target="_blank">
+        <img src="images/logo-w.png" alt="Letiste" class="logo" id="logo">
+      </a>
+      <!-- Letiste 2018 -->
+      <div class="pismena">
+        <img src="pismena/l.png" alt="L" id="l" onload="blinkRandom()">
+        <img src="pismena/e.png" alt="E" id="e">
+        <img src="pismena/t.png" alt="T" id="t">
+        <img src="pismena/i.png" alt="I" id="i">
+        <img src="pismena/hacek.png" alt="S-hacek" id="hacek">
+        <img src="pismena/s.png" alt="S" id="s">
+        <img src="pismena/t.png" alt="T" id="tt">
+        <img src="pismena/hacek.png" alt="E-hacek" id="hacek_">
+        <img src="pismena/e.png" alt="E" id="ee">
+      </div>
+    </div>
 
     <!-- Social icons -->
     <ul class="social_icons">
@@ -74,7 +87,7 @@
           </a>
       </li>
       <li>
-        <a href="https://www.instagram.com/letistefest/" title="Instagram" target="_blank">
+        <a href="https://www.instagram.com/letistedisaster/" title="Instagram" target="_blank">
             <img src="images/instagram-sketch-alt.png" class="social_icons__icon" id="insta" alt="Instagram">
           </a>
       </li>
@@ -82,18 +95,7 @@
 
       </li>
     </ul>
-
-    <!-- Letiste 2018 -->
-    <div class="pismena">
-      <img src="pismena/l.png" alt="L" id="l" onload="blinkRandom()">
-      <img src="pismena/e.png" alt="E" id="e">
-      <img src="pismena/t.png" alt="T" id="t">
-      <img src="pismena/i.png" alt="I" id="i">
-      <img src="pismena/hacek.png" alt="S" id="hacek">
-      <img src="pismena/t.png" alt="T" id="tt">
-      <img src="pismena/hacek.png" alt="E" id="hacek_">
-    </div>
-  </main>
+  </header>
   <!-- <footer>
     <div class="inner">
       <p style="color: black">© Letiště 2018</p>
