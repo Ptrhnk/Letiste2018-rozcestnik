@@ -23,7 +23,7 @@ function showLetter() {
     letter.style.visibility = "visible";
       setTimeout(function() {
         letter.style.visibility = "hidden";
-    }, Math.floor(Math.random() * 800) + 100);
+    }, Math.floor(Math.random() * 900) + 100);
   }, Math.floor((Math.random() * 5000) + 300));
 }
 

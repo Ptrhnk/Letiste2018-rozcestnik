@@ -15,8 +15,6 @@ html, body {
 .header {
   height: 100vh;
   position: relative;
-  padding: ;
-  /* background-color: lightgreen; */
 }
 
 .center-box {
@@ -40,7 +38,7 @@ html, body {
   min-height: 180px;
   width: auto;
   display: inline-block;
-  -webkit-filter: drop-shadow(0px 0px 8px #2A8EFF);
+  -webkit-filter: drop-shadow(0px 0px 6px #2A8EFF);
   filter: drop-shadow(0px 0px 3px #2A8EFF);
 }
 
@@ -78,13 +76,17 @@ html, body {
   filter: drop-shadow(0px 0px 5px #7cc6ff);
 }
 .goout_anchor {
-  margin-top: 35px;
+  margin-top: 38px;
   display: block;
+
 }
 .calendar {
-  height: 40px;
-  margin-top: 33px;
-  transform: translate(27%, 0);
+  margin-top: 35px;
+  height: 42px;
+  transform: translate(2%, 0);
+  -webkit-transform: translate(2%, 0);
+  -webkit-filter: drop-shadow(0px 0px 10px rgba(124, 198, 255, 0.41));
+  filter: drop-shadow(0px 0px 5px rgba(124, 198, 255, 0.41));
 }
 .left-container {
   position: absolute;
@@ -115,7 +117,6 @@ ol, ul {
 
 li {
   display: list-item;
-  margin-bottom: 5px;
 }
 
 .social_icons {
@@ -140,15 +141,7 @@ li {
   border-radius: 4px;
 }
 
-.pcvisible{display: flex !important; }
-
-.mobilvisible{display: none !important; }
-
-
 @media screen and (max-width: 767px) {
-  html, body {
-    overflow: scroll;
-  }
   .social_icons {
     top: 30px;
     right: 30px;
@@ -156,14 +149,12 @@ li {
   .goout {
     max-height: 46px;
     border-radius: 10px;
-    -webkit-filter: drop-shadow(0px 0px 10px #ffffff);
-    filter: drop-shadow(0px 0px 5px #ffffff);
   }
   .goout_anchor {
     margin-top: 15px;
   }
   .logo {
-    max-height: 100px;
+    max-height: 130px;
     min-height: 100px;
   }
   #l, #e, #t, #i, #s, #tt, #hacek, #ee, #hacek_ {
@@ -171,7 +162,7 @@ li {
     width: auto !important;
   }
   .pismena {
-    margin-top: 30px;
+    margin-top: 20px;
     min-width: 450px;
   }
   .left-container {
@@ -179,13 +170,10 @@ li {
     left: 28px;
   }
   .calendar {
-    margin-top: 6px;
+    margin-top: 25px;
     max-height: 35px;
     min-height: 35px;
     transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
   }
-
-  .pcvisible{display: none !important;}
-
-  .mobilvisible{display: flex !important;}
 }
