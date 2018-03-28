@@ -1,7 +1,7 @@
 var l, e, t, i, s, hacek, tt, ee, hacek_, logo;
 
 function blinkRandom() {
-  var interval = setInterval("showLetter()", 200);
+  var interval = setInterval("showLetter()", 180);
   var interval = setInterval("shadowBlink()", 800);
 }
 
@@ -23,7 +23,7 @@ function showLetter() {
     letter.style.visibility = "visible";
       setTimeout(function() {
         letter.style.visibility = "hidden";
-    }, Math.floor(Math.random() * 800) + 100);
+    }, Math.floor(Math.random() * 900) + 100);
   }, Math.floor((Math.random() * 5000) + 300));
 }
 
