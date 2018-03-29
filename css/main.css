@@ -9,14 +9,19 @@ html, body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  background-color: black;
+}
+ol, ul {
+  list-style-type: none;
+}
+li {
+  display: list-item;
+  margin-bottom: 5px;
 }
 
 .header {
   height: 100vh;
   position: relative;
-  padding: ;
-  /* background-color: lightgreen; */
+  background-color: black;
 }
 
 .center-box {
@@ -28,13 +33,11 @@ html, body {
   text-align: center;
   overflow: hidden;
 }
-
 .logo-box {
   display: inline-block;
   padding: 10px;
   text-align: center;
 }
-
 .logo {
   height: 180px;
   min-height: 180px;
@@ -43,7 +46,6 @@ html, body {
   -webkit-filter: drop-shadow(0px 0px 8px #2A8EFF);
   filter: drop-shadow(0px 0px 3px #2A8EFF);
 }
-
 .logo-box:hover img {
   -webkit-filter: drop-shadow(0px 0px 8px #2A8EFF);
   filter: drop-shadow(0px 0px 4px #2A8EFF);
@@ -55,20 +57,25 @@ html, body {
   margin-top: 65px;
   padding: 10px;
 }
-
 #l, #e, #t, #i, #s, #hacek, #tt, #ee, #hacek_ {
   visibility: hidden;
-  -webkit-filter: drop-shadow(0px 0px 4px rgba(157, 226, 255, 0.48));
-  filter: drop-shadow(0px 0px 2px rgba(157, 226, 255, 0.48));
+  -webkit-filter: drop-shadow(0px 0px 4px #2A8EFF);
+  filter: drop-shadow(0px 0px 2px #2A8EFF);
   height: 130px
 }
-
 #hacek, #hacek_ {
   position: absolute;
 }
 #hacek {
   transform: translate(5%, 0);
   -webkit-transform: translate(5%, 0);
+}
+
+.left-container {
+  position: absolute;
+  left: 40px;
+  text-align: center;
+  z-index: 1;
 }
 .goout {
   display: block;
@@ -85,6 +92,8 @@ html, body {
   height: 40px;
   margin-top: 33px;
   transform: translate(27%, 0);
+  -webkit-filter: drop-shadow(0px 0px 3px #7cc6ff);
+  filter: drop-shadow(0px 0px 1.7px #7cc6ff);
 }
 .left-container {
   position: absolute;
@@ -92,6 +101,7 @@ html, body {
   text-align: center;
   z-index: 1;
 }
+
 footer {
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -109,33 +119,21 @@ footer {
   width: 100%;
 }
 
-ol, ul {
-  list-style-type: none;
-}
-
-li {
-  display: list-item;
-  margin-bottom: 5px;
-}
-
 .social_icons {
   position: absolute;
   right: 40px;
   top: 40px;
   z-index: 1;
 }
-
 .social_icons>li {
   padding: 0 0 15px 0;
   position: relative
 }
-
 .social_icons__icon {
   position: relative;
   width: 32px;
   height: 32px;
 }
-
 #insta {
   border-radius: 4px;
 }
@@ -183,6 +181,8 @@ li {
     max-height: 35px;
     min-height: 35px;
     transform: translate(0, 0);
+    filter: drop-shadow(0px 0px 0px #7cc6ff);
+    -webkit-filter: drop-shadow(0px 0px 0px #7cc6ff);
   }
 
   .pcvisible{display: none !important;}
