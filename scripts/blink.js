@@ -1,7 +1,7 @@
 var l, e, t, i, s, hacek, tt, ee, hacek_, logo;
 
 function blinkRandom() {
-  var interval = setInterval("showLetter()", 200);
+  var interval = setInterval("showLetter()", 180);
   var interval = setInterval("shadowBlink()", 800);
 }
 
